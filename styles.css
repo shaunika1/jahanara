@@ -8,7 +8,7 @@ body{
 /* header code */
 .header{
     background: #E0A7A7;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,15 +42,15 @@ ul{
     background-image: url("images/herobackground.png");
     background-size:fill;
     background-blend-mode: overlay, multiply;
-    background-color: #f5e1e1;
+    background-color: #f8eded;
 
     margin: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 90vh;
 }
 .jahanara{
-    width: 250px;
     padding: 20px;
 }
 .herotext{
@@ -58,10 +58,27 @@ ul{
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    max-width: 25%;
+    max-width: 40%;
 }
 
 .bolhero{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.semihero{
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+
+/* intro code */
+.intro{
+
+}
+.bolintro{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
 }
