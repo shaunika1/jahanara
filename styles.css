@@ -1,0 +1,67 @@
+body{
+    background: #FFF1F1;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* header code */
+.header{
+    background: #E0A7A7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+   
+}
+
+.bol{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/* hero code */
+.hero{
+    background-image: url("images/herobackground.png");
+    background-size:fill;
+    background-blend-mode: overlay, multiply;
+    background-color: #f5e1e1;
+
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.jahanara{
+    width: 250px;
+    padding: 20px;
+}
+.herotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    max-width: 25%;
+}
+
+.bolhero{
+    font-weight: bold;
+    font-size: 40px;
+}
