@@ -3,18 +3,21 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
 /* header code */
 .header{
     background: #E0A7A7;
-    padding: 30px;
+    padding: 10px 30px 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
+  
 }
 
 a{
@@ -22,7 +25,7 @@ a{
     color: black;
 }
 
-ul{
+.headlist{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -46,9 +49,11 @@ ul{
 
     margin: 0px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     height: 90vh;
+    flex:1;
 }
 .jahanara{
     padding: 20px;
@@ -73,12 +78,31 @@ ul{
 
 
 /* intro code */
-.intro{
 
-}
-.bolintro{
-    font-size: 30px;
+.boltitle, .mughtitle{
+    font-size: 40px;
     text-align: center;
     font-weight: bold;
-    padding: 20px;
+    padding: 30px;
+}
+
+.normintro{
+    padding: 0px 300px 30px 300px;
+}
+/* Example: Remove padding on screens smaller than 600px */
+@media screen and (max-width: 1000px) {
+  .normintro {
+    padding: 0px 50px 50px 50px;
+  }
+}
+
+
+/*mughal life section*/
+.mughtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.mughmap{
+    max-width: 300px;
 }
