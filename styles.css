@@ -86,23 +86,46 @@ a{
     padding: 30px;
 }
 
-.normintro{
+.normtext{
     padding: 0px 300px 30px 300px;
 }
 /* Example: Remove padding on screens smaller than 600px */
 @media screen and (max-width: 1000px) {
-  .normintro {
+  .normtext {
     padding: 0px 50px 50px 50px;
   }
 }
 
 
 /*mughal life section*/
+.mughflex{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    padding: 30px 80px 80px 80px;
+    justify-content: space-between;
+}
 .mughtext{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    padding: 50px;
+    font-size: 25px;
+    gap: 10px;
+    flex:1;
+
+}
+@media screen and (max-width: 1000px) {
+  .mughtext {
+    font-size: 15px;
+    padding: 10px;
+  }
 }
 .mughmap{
-    max-width: 300px;
+    width: 50%;
+    object-fit: contain;
+}
+
+
+li{
+    padding-bottom: 20px;
 }
