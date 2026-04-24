@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background: #FFF1F1;
     display: flex;
@@ -5,6 +8,7 @@ body{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    
 }
 
 /* header code */
@@ -17,7 +21,7 @@ body{
     flex-wrap: wrap;
     position: sticky;
     top: 0;
-  
+    
 }
 
 a{
@@ -31,7 +35,7 @@ a{
     flex-wrap: wrap;
     flex-direction: row;
     gap: 50px;
-   
+    padding-bottom:0;
 }
 
 .bol{
@@ -47,12 +51,12 @@ a{
     background-blend-mode: overlay, multiply;
     background-color: #f8eded;
 
-    margin: 0px;
+   
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    height: 90vh;
+    height: 110vh;
     flex:1;
 }
 .jahanara{
@@ -102,30 +106,75 @@ a{
     display: flex;
     flex-direction: row;
     flex:1;
+    flex-wrap: wrap;
     padding: 30px 80px 80px 80px;
     justify-content: space-between;
 }
+
 .mughtext{
-    display: flex;
-    flex-direction: column;
     padding: 50px;
     font-size: 25px;
-    gap: 10px;
     flex:1;
-
 }
+
+
 @media screen and (max-width: 1000px) {
-  .mughtext {
+ /*
+    .mughtext {
     font-size: 15px;
     padding: 10px;
+    flex: 1;
   }
-}
-.mughmap{
-    width: 50%;
-    object-fit: contain;
+  .mughmap{
+    max-height: 100px;
+    }
+    */
+
+    .mughflex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 20px 20px 0;
+    }
+    .mughtext {
+    font-size: 20px;
+    }
+    .mughmap{
+    max-height: 300px;
+    max-width: 300px;
+    align-self: center;
+    }
 }
 
 
 li{
     padding-bottom: 20px;
+}
+
+.paintings{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex:1;
+    padding: 30px;
+}
+
+.painting{
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    font-size: 10px;
+   
+}
+
+.painthead{
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.tasfir{
+    width: 100%;
+    aspect-ratio: 1 / 2; /* The image will stay in a 16:9 ratio */
+    object-fit: cover;
 }
