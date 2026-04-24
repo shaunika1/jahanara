@@ -1,20 +1,27 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background: #FFF1F1;
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
 }
 
 /* header code */
 .header{
     background: #E0A7A7;
-    padding: 20px;
+    padding: 10px 30px 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
+    
 }
 
 a{
@@ -22,13 +29,13 @@ a{
     color: black;
 }
 
-ul{
+.headlist{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 50px;
-   
+    padding-bottom:0;
 }
 
 .bol{
@@ -42,15 +49,17 @@ ul{
     background-image: url("images/herobackground.png");
     background-size:fill;
     background-blend-mode: overlay, multiply;
-    background-color: #f5e1e1;
+    background-color: #f8eded;
 
-    margin: 0px;
+   
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    height: 110vh;
+    flex:1;
 }
 .jahanara{
-    width: 250px;
     padding: 20px;
 }
 .herotext{
@@ -58,10 +67,114 @@ ul{
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    max-width: 25%;
+    max-width: 40%;
 }
 
 .bolhero{
     font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.semihero{
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+
+/* intro code */
+
+.boltitle, .mughtitle{
     font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.normtext{
+    padding: 0px 300px 30px 300px;
+}
+/* Example: Remove padding on screens smaller than 600px */
+@media screen and (max-width: 1000px) {
+  .normtext {
+    padding: 0px 50px 50px 50px;
+  }
+}
+
+
+/*mughal life section*/
+.mughflex{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    flex-wrap: wrap;
+    padding: 30px 80px 80px 80px;
+    justify-content: space-between;
+}
+
+.mughtext{
+    padding: 50px;
+    font-size: 25px;
+    flex:1;
+}
+
+
+@media screen and (max-width: 1000px) {
+ /*
+    .mughtext {
+    font-size: 15px;
+    padding: 10px;
+    flex: 1;
+  }
+  .mughmap{
+    max-height: 100px;
+    }
+    */
+
+    .mughflex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 20px 20px 0;
+    }
+    .mughtext {
+    font-size: 20px;
+    }
+    .mughmap{
+    max-height: 300px;
+    max-width: 300px;
+    align-self: center;
+    }
+}
+
+
+li{
+    padding-bottom: 20px;
+}
+
+.paintings{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex:1;
+    padding: 30px;
+}
+
+.painting{
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    font-size: 10px;
+   
+}
+
+.painthead{
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.tasfir{
+    width: 100%;
+    aspect-ratio: 1 / 2; /* The image will stay in a 16:9 ratio */
+    object-fit: cover;
 }
