@@ -250,6 +250,7 @@ li{
     padding: 20px;
    }
 }
+
 .book{
     max-width: 45%;
 }
@@ -268,4 +269,8 @@ li{
 
 .persiantext{
     max-width: 40%
+}
+.tombtext{
+    padding: 0px 500px 0px 500px;
+   color: grey;
 }
