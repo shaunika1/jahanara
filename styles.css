@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 html {
-    scroll-padding-top: 80px; /* Matches your header height */
-    scroll-behavior: smooth; /* Optional: adds a nice sliding effect */
+    scroll-padding-top: 80px; 
+    scroll-behavior: smooth; 
 }
 body{
     background: #FFF1F1;
@@ -227,7 +227,7 @@ li{
     margin-left: 20px;
 }
 
-.boximage{
+.boximage, .tombimage{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -279,9 +279,18 @@ li{
     gap: 30px;
     justify-content: space-around;
     padding: 100px;
+    padding-top: 0px;
     align-items: center;
 }
 
+.persiantext{
+    max-width: 40%;
+}
+.semiboldtitle{
+    font-weight: 700;
+    padding: 50px 0px 0px 60px;
+    font-size: 30px;
+}
 @media screen and (max-width: 1000px) {
  
    .persiantext{
@@ -298,14 +307,11 @@ li{
    
 }
 
-.persiantext{
-    max-width: 40%;
-}
-.semiboldtitle{
-    font-weight: 700;
-    padding: 50px 0px 60px 60px;
-}
+
 /*code for conclusion*/
+
+
+
 .tombtext{
     padding: 0px 500px 0px 500px;
    color: grey;
@@ -315,6 +321,24 @@ li{
     font-size: 30px;
 }
 
+.tombimage{
+    max-width: 700px;
+}
+
+@media screen and (max-width: 1000px) {
+   .conclusion{
+    margin: 0px;
+    padding: 0px;
+   }
+   .tombtext{
+    padding: 20px !important;
+    font-size: 20px;
+    text-align: center;
+   }
+  .tombimage{
+    max-width: 400px !important;
+    }
+}
 /* generic code for quotes */
 .quote{
     background-image: none;
