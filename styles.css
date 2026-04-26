@@ -93,7 +93,7 @@ a{
 .normtext{
     padding: 0px 300px 30px 300px;
 }
-/* Example: Remove padding on screens smaller than 600px */
+
 @media screen and (max-width: 1000px) {
   .normtext {
     padding: 0px 50px 50px 50px;
@@ -155,7 +155,6 @@ li{
 .painting{
     display: flex;
     flex-direction: column;
-   
     max-width: 400px;
     font-size: 10px;
     background-color: #eed6d6;
@@ -170,7 +169,6 @@ li{
 }
 
 .tasfir{
-  
     width: 300px;
 }
 
@@ -179,3 +177,31 @@ li{
 }
 
 /*below is the code for the most difficult section: mullah shah*/
+.boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin: 0px 100px 30px 100px;
+    flex:1;
+    align-items: flex-start;
+
+ 
+}
+
+
+.box{
+    background: white;
+    max-width: 400px;
+    margin: 20px;
+
+}
+
+.boxtitle{
+    text-align: center;
+}
+
+.boximage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
