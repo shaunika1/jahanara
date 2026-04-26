@@ -178,16 +178,19 @@ li{
 
 /*below is the code for the most difficult section: mullah shah*/
 .boxes{
+    
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    margin: 0px 100px 30px 100px;
     flex:1;
     align-items: flex-start;
-
- 
+    margin: 0px 100px 30px 100px;
 }
 
+.leftbox, .middlebox, .rightbox{
+    display: flex;
+    flex-direction: column;
+}
 
 .box{
     background: white;
