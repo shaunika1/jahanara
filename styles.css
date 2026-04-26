@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+html {
+    scroll-padding-top: 80px; 
+    scroll-behavior: smooth; 
+}
 body{
     background: #FFF1F1;
     display: flex;
@@ -83,7 +87,7 @@ a{
 
 /* intro code */
 
-.boltitle, .mughtitle{
+.boltitle, .mughtitle, .tombtitle{
     font-size: 40px;
     text-align: center;
     font-weight: bold;
@@ -116,7 +120,9 @@ a{
     font-size: 25px;
     flex:1;
 }
-
+.mughmaptext{
+    font-size: 15px;
+}
 
 @media screen and (max-width: 1000px) {
  
@@ -133,11 +139,22 @@ a{
     .mughmap{
     max-height: 300px;
     max-width: 300px;
+   
+    }
+    .mughmapfull{
     align-self: center;
     }
 }
 
-
+hr {
+  border: none;
+  height: 1px;
+  background-color: #333;
+  margin: 20px 0;
+  width: 100px;
+  margin: 0px auto 60px auto;
+  
+}
 li{
     padding-bottom: 20px;
 }
@@ -150,6 +167,7 @@ li{
     flex:1;
     padding: 30px;
     padding-bottom: 100px;
+    gap: 5px;
 }
 
 .painting{
@@ -159,6 +177,7 @@ li{
     font-size: 10px;
     background-color: #eed6d6;
     padding: 30px 50px 30px 50px;
+    border-radius: 15px;
 }
 
 .painthead{
@@ -196,15 +215,131 @@ li{
     background: white;
     max-width: 400px;
     margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid gainsboro;
 
 }
 
 .boxtitle{
-    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
-.boximage{
+.boximage, .tombimage{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+}
+
+.icon{
+    max-width: 50px;
+    margin: 0
+}
+
+.fulltitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.books{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 300px 0px 300px;
+    justify-content: space-between;
+    flex:1;
+}
+
+
+@media screen and (max-width: 1000px) {
+ 
+   .books{
+    padding: 20px;
+   }
+}
+
+.book{
+    max-width: 45%;
+}
+.booktitle{
+    font-weight: bold;
+    padding: 30px 0px 20px 0px;
+    text-decoration: underline;
+}
+
+.persiansplit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    padding: 100px;
+    padding-top: 0px;
+    align-items: center;
+}
+
+.persiantext{
+    max-width: 40%;
+}
+.semiboldtitle{
+    font-weight: 700;
+    padding: 50px 0px 0px 60px;
+    font-size: 30px;
+}
+@media screen and (max-width: 1000px) {
+ 
+   .persiantext{
+    margin: 0px;
+    padding: 0px;
+    
+        max-width: 500px;
+   
+   }
+   .persiansplit{
+    padding: 0px;
+    margin: 0px;
+   }
+   
+}
+
+
+/*code for conclusion*/
+
+
+
+.tombtext{
+    padding: 0px 500px 0px 500px;
+   color: grey;
+}
+.tombtitle{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.tombimage{
+    max-width: 700px;
+}
+
+@media screen and (max-width: 1000px) {
+   .conclusion{
+    margin: 0px;
+    padding: 0px;
+   }
+   .tombtext{
+    padding: 20px !important;
+    font-size: 20px;
+    text-align: center;
+   }
+  .tombimage{
+    max-width: 400px !important;
+    }
+}
+/* generic code for quotes */
+.quote{
+    background-image: none;
 }
