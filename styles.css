@@ -93,7 +93,7 @@ a{
 .normtext{
     padding: 0px 300px 30px 300px;
 }
-/* Example: Remove padding on screens smaller than 600px */
+
 @media screen and (max-width: 1000px) {
   .normtext {
     padding: 0px 50px 50px 50px;
@@ -119,16 +119,7 @@ a{
 
 
 @media screen and (max-width: 1000px) {
- /*
-    .mughtext {
-    font-size: 15px;
-    padding: 10px;
-    flex: 1;
-  }
-  .mughmap{
-    max-height: 100px;
-    }
-    */
+ 
 
     .mughflex{
         display: flex;
@@ -158,23 +149,62 @@ li{
     justify-content: space-around;
     flex:1;
     padding: 30px;
+    padding-bottom: 100px;
 }
 
 .painting{
     display: flex;
     flex-direction: column;
-    max-width: 20%;
+    max-width: 400px;
     font-size: 10px;
-   
+    background-color: #eed6d6;
+    padding: 30px 50px 30px 50px;
 }
 
 .painthead{
     margin: 20px 0 20px 0;
     text-align: center;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .tasfir{
-    width: 100%;
-    aspect-ratio: 1 / 2; /* The image will stay in a 16:9 ratio */
-    object-fit: cover;
+    width: 300px;
+}
+
+.painttext{
+    font-size: 20px;
+}
+
+/*below is the code for the most difficult section: mullah shah*/
+.boxes{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    flex:1;
+    align-items: flex-start;
+    margin: 0px 100px 30px 100px;
+}
+
+.leftbox, .middlebox, .rightbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    background: white;
+    max-width: 400px;
+    margin: 20px;
+
+}
+
+.boxtitle{
+    text-align: center;
+}
+
+.boximage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
