@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+html {
+    scroll-padding-top: 80px; /* Matches your header height */
+    scroll-behavior: smooth; /* Optional: adds a nice sliding effect */
+}
 body{
     background: #FFF1F1;
     display: flex;
@@ -142,7 +146,15 @@ a{
     }
 }
 
-
+hr {
+  border: none;
+  height: 1px;
+  background-color: #333;
+  margin: 20px 0;
+  width: 100px;
+  margin: 0px auto 60px auto;
+  
+}
 li{
     padding-bottom: 20px;
 }
@@ -263,13 +275,37 @@ li{
 .persiansplit{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: space-around;
     padding: 100px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+ 
+   .persiantext{
+    margin: 0px;
+    padding: 0px;
+    
+        max-width: 500px;
+   
+   }
+   .persiansplit{
+    padding: 0px;
+    margin: 0px;
+   }
+   
 }
 
 .persiantext{
-    max-width: 40%
+    max-width: 40%;
 }
+.semiboldtitle{
+    font-weight: 700;
+    padding: 50px 0px 60px 60px;
+}
+/*code for conclusion*/
 .tombtext{
     padding: 0px 500px 0px 500px;
    color: grey;
@@ -279,3 +315,7 @@ li{
     font-size: 30px;
 }
 
+/* generic code for quotes */
+.quote{
+    background-image: none;
+}
