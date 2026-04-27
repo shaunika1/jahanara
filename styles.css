@@ -291,29 +291,54 @@ li{
 }
 .semiboldtitle{
     font-weight: 700;
-    padding: 50px 0px 0px 60px;
+    padding: 50px 0px 30px 300px;
     font-size: 30px;
 }
 @media screen and (max-width: 1000px) {
  
    .persiantext{
     margin: 0px;
-    padding: 0px;
-    
-        max-width: 500px;
+    padding: 30px;
+    max-width: 500px;
    
    }
    .persiansplit{
     padding: 0px;
-    margin: 0px;
+    margin: 30px;
    }
-   
+   .semiboldtitle{
+    font-weight: 700;
+    padding: 50px 0px 30px 50px;
+    font-size: 30px;
+    }
+    
 }
 
+/* code for construction*/
+.conimages{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.conbox{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.context{
+    padding-left: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .jama, .chowk, .mullah{
+        width: 400px ;
+        height: 348px;
+        object-fit: cover;
+        padding: 0px 40px 20px 40px;
+        border-radius: 15px;
+    } 
+}
 /*code for conclusion*/
-
-
 
 .tombtext{
     padding: 0px 500px 0px 500px;
