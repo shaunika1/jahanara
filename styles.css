@@ -371,16 +371,32 @@ li{
 }
 /* generic code for quotes */
 .quote{
-    background-image: none;
+    margin: 20px 0px 20px 0px;
+    height: 100vh; /* Full screen height */
+    background-image: url(./images/mughbackground1.png);
+    background-size:fill;
+    background-blend-mode: multiply;
+    background-color: rgb(241, 190, 218);
+
+    background-attachment: fixed; /* This is the magic line */
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.quotetext{
+    font-size: 35px;
+    padding: 60px;
+    margin: 20px;
+    background-color: rgb(246, 194, 223, 0.9);
+}
 
 /*code for the footer*/
 .footer{
     display: flex;
     background-color:#eed6d6;
     flex-wrap: wrap;
-}
-.footerhr{
-    
 }
