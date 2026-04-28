@@ -12,7 +12,8 @@ body{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    
+    cursor: url('./images/cursor.png'), auto;
+
 }
 
 img:hover{
@@ -25,7 +26,7 @@ img:hover{
 /* header code */
 .header, .footer{
     background: #E0A7A7;
-    padding: 10px 30px 10px 30px;
+    padding: 0px 10px 0px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,22 +37,25 @@ img:hover{
     font-family:Georgia, 'Times New Roman', Times, serif;
     z-index: 1000
 }
+.dropdown-cont{
+    display: flex;
 
+}
 a{
     text-decoration: none;
     color: black;
+    cursor: url('./images/cursorhand.png'), auto;
 }
 
-.headlist, .headerlis, .footerlist, .footlist{
+.headlist, .footerlist, .footlist{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 50px;
-    padding-bottom:0;
-    
+    padding-top: 20px;
 }
-.headerlist:hover{
+.headerlist:hover, .footerlist:hover{
     text-decoration: underline;
 }
 .bol{
@@ -64,12 +68,15 @@ a{
 }
 
 @media screen and (max-width: 1000px) {
-    /* This makes sure the list items don't hide themselves */
-    .headerlist {
+    .header{
+        padding: 10px 30px 10px 30px;
+        
+    }
+    .headerlist, .footerlist {
         display: block; 
     }
     .dropdown {
-        display: block; /* Force it to show on mobile */
+        display: block; 
         
     }
     .dropdown-cont {
@@ -88,9 +95,9 @@ a{
         padding: 10px;
         margin: 0; 
         z-index: 1001;
+        gap: 2px;
     }
 
-    /* Trigger the show when hovering anywhere on the container */
     .dropdown-cont:hover .headlist {
         display: flex;
     }
@@ -460,8 +467,10 @@ li{
 }
 
 @media screen and (max-width: 1000px) {
-    .headlist{
-        flex-direction: column;
+    .footlist{
+        display: block;
     }
-    
+    ul.footlist{
+        margin: 0;
+    }
 }
