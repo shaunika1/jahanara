@@ -34,7 +34,7 @@ img:hover{
     top: 0;
     font-size: 17px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-      z-index: 1000
+    z-index: 1000
 }
 
 a{
@@ -42,7 +42,7 @@ a{
     color: black;
 }
 
-.headlist, .headerlist{
+.headlist, .headerlis, .footerlist, .footlist{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +57,43 @@ a{
 .bol{
     font-weight: bold;
     font-size: 20px;
+}
+
+.dropdown{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    /* This makes sure the list items don't hide themselves */
+    .headerlist {
+        display: block; 
+    }
+    .dropdown {
+        display: block; /* Force it to show on mobile */
+        
+    }
+    .dropdown-cont {
+        position: relative;
+        display: inline-block;
+    }
+
+    .headlist {
+        display: none;
+        position: absolute;
+        top: 100%; 
+        right: 0;
+        background: #E0A7A7;
+        flex-direction: column;
+        width: 180px;
+        padding: 10px;
+        margin: 0; 
+        z-index: 1001;
+    }
+
+    /* Trigger the show when hovering anywhere on the container */
+    .dropdown-cont:hover .headlist {
+        display: flex;
+    }
 }
 
 
