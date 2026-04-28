@@ -1,0 +1,47 @@
+body{
+  background: #FFF1F1;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  padding: 0px 300px 30px 300px;
+  
+}
+
+button{
+  background-color: #E0A7A7;
+;
+  height: 30px;
+  color: white;
+  
+}
+.buttona{
+  text-decoration: none;
+}
+
+.reference{
+  padding-left: 36px;     /* Moves the entire block right */
+  text-indent: -36px;    /* Pulls only the first line back left */
+  margin-bottom: 12px;   /* Adds space between sources */
+}
+
+.stitle{
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+a{
+  color: black;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .header{
+    padding: 0;
+  }
+  body{
+    padding: 20px;
+  }
+  .reference{
+    font-size: 15px;
+  }
+}

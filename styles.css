@@ -25,7 +25,8 @@ body{
     flex-wrap: wrap;
     position: sticky;
     top: 0;
-    
+    font-size: 17px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 a{
@@ -33,18 +34,21 @@ a{
     color: black;
 }
 
-.headlist{
+.headlist, .headerlist{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 50px;
     padding-bottom:0;
+    
 }
-
+.headerlist:hover{
+    text-decoration: underline;
+}
 .bol{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
@@ -395,9 +399,24 @@ li{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+@media screen and (max-width: 1000px) {
+    .quotetext{
+        font-size: 25px;
+    
+    }
+}
+
 /*code for the footer*/
 .footer{
     display: flex;
     background-color:#eed6d6;
     flex-wrap: wrap;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .headlist{
+        flex-direction: column;
+    }
+    
 }
