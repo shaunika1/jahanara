@@ -371,7 +371,16 @@ li{
 }
 /* generic code for quotes */
 .quote{
-    background-image: none;
+  padding: 0;
+  height: 100vh; /* Full screen height */
+  background-image: url(./images/mughbackground1.png);
+  background-attachment: fixed; /* This is the magic line */
+  background-size: cover;
+  background-position: center;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
