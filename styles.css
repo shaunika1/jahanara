@@ -78,9 +78,10 @@ a{
 @media screen and (max-width: 1000px) {
     .header{
         padding: 10px 30px 10px 30px;
+        overflow: visible !important;
     }
-    .headerlist, .footerlist {
-        display: block; 
+    .header .headerlist, .footerlist {
+        display: block !important; 
     }
     .dropdown {
         display: block; 
@@ -91,24 +92,28 @@ a{
         display: inline-block;
     }
 
-    .headlist {
+    .header .headlist {
         display: none;
         position: absolute;
         top: 100%; 
         right: 0;
-        background: #E0A7A7;
-        flex-direction: column;
+        background: #E0A7A7 !important;
+        flex-direction: column !important;
         width: 180px;
         padding: 10px;
-        margin: 0; 
+        margin: 0 !important; 
+        margin-top: -10px !important;
         z-index: 1001;
         gap: 2px;
+        flex-wrap: nowrap;
+        height: auto;
     }
 
     .dropdown-cont:hover .headlist {
-        display: flex;
+        display: flex !important;
     }
 }
+
 
 
 /* hero code */
@@ -327,6 +332,10 @@ li{
    .books{
     padding: 20px;
    }
+   .boxes{
+    padding: 10px;
+    margin: 0px;
+   }
 }
 
 .book{
@@ -348,7 +357,14 @@ li{
     padding-top: 0px;
     align-items: center;
 }
-
+.munis{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.persian{
+    padding-bottom: 10px;
+}
 .persiantext{
     max-width: 40%;
 }
@@ -395,13 +411,16 @@ li{
     padding-left: 20px;
 }
 @media screen and (max-width: 1000px) {
-    .jama, .chowk, .mullah{
+    .jama, .mullah, .chowk{
         width: 400px ;
         height: 348px;
         object-fit: cover;
-        padding: 0px 40px 20px 40px;
+        padding: 0px 40px 20px 60px;
         border-radius: 15px;
     } 
+    .jama, .mullah{
+        padding-left: 100px;
+    }
 }
 /*code for conclusion*/
 
@@ -474,10 +493,21 @@ li{
 }
 
 @media screen and (max-width: 1000px) {
-    .footlist{
-        display: block;
+    .footer{
+        display: block !important;
+        min-height: 200px;
+        height: auto;
+        background-color:#eed6d6 !important;
+        box-sizing: border-box;
+        overflow: hidden;
     }
-    ul.footlist{
+    .footlist{
+        display: block !important;
+        width: 100%;
+        background-color: transparent;
+        padding: 0;
         margin: 0;
     }
+  
+
 }
