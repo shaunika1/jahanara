@@ -1,3 +1,5 @@
 # jahanara
-REL PROJECT: INTRO TO ISLAM SPRING 2026
+REL_OX 226W PROJECT: INTRO TO ISLAM SPRING 2026
 https://shaunika1.github.io/jahanara/
+
+Taking religion classes along with math/cs in college has undoubtedly made me a more ethical and understanding person. I look forward to continue working at the intersection of STEM/ humanity!
