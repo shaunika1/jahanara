@@ -3,11 +3,13 @@ body{
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   padding: 0px 300px 30px 300px;
+  cursor: url('./images/cursor.png'), auto;
   
 }
 
 button{
   background-color: #E0A7A7;
+  cursor: url('./images/cursorhand.png'), auto;
 ;
   height: 30px;
   color: white;
@@ -15,6 +17,8 @@ button{
 }
 .buttona{
   text-decoration: none;
+    cursor: url('./images/cursorhand.png'), auto;
+
 }
 
 .reference{
