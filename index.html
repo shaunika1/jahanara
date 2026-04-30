@@ -333,5 +333,26 @@
                 <li class="footerlist"><a href = "https://devpost.com/shaunika-buttan"  >DevPost</a></li>
             </ul>
         </div>
+
+        <script>
+  // 1. Find the dropdown container in your code
+  const dropdownContainer = document.querySelector('.dropdown-cont');
+
+  // 2. Listen for a "click" (which is a "tap" on phones)
+  dropdownContainer.addEventListener('click', function(event) {
+    // 3. Toggle the class "is-open" on or off
+    this.classList.toggle('is-open');
+    
+    // 4. Prevent the menu from closing immediately if you click a link inside it
+    event.stopPropagation(); 
+  });
+
+  // 5. Optional: Close the menu if the user clicks anywhere else on the screen
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropdown')) {
+      dropdownContainer.classList.remove('is-open');
+    }
+  }
+</script>
 </body>
 </html>
