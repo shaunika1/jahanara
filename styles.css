@@ -510,4 +510,12 @@ li{
     }
   
 
+    @media screen and (max-width: 1000px) {
+    /* ... keep your existing mobile styles ... */
+
+    /* This is the new rule that works with the JavaScript */
+    .dropdown-cont.is-open .headlist {
+        display: flex !important;
+    }
+}
 }
