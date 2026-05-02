@@ -274,7 +274,8 @@ li{
     flex-wrap:wrap;
     flex:1;
     align-items: flex-start;
-    margin: 0px 100px 30px 100px;
+    justify-content: center;
+  
 }
 
 .leftbox, .middlebox, .rightbox{
@@ -284,7 +285,7 @@ li{
 
 .box{
     background: white;
-    max-width: 400px;
+    max-width: 50vh;
     margin: 20px;
     padding: 20px;
     border-radius: 15px;
